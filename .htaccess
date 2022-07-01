@@ -1,0 +1,152 @@
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|mp4|mpeg|pdf|svg|woff|woff2|ttf|eot)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# Disable ETags
+<IfModule mod_headers.c>
+	Header unset ETag
+	#Header unset Set-Cookie
+</IfModule>
+FileETag None
+
+RewriteOptions inherit
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+# ## Force HTTP to HTTPS ##
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
+
+# ## Add WWW to URL ##
+# #RewriteCond %{HTTP_HOST} !^www\.          ## Will add www to localhost too ##
+# RewriteCond %{HTTP_HOST} !^(www\.|localhost$) [NC]         ## Will omit adding www to localhost ##
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+# ## OR ##
+# # RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# gzip compress files
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+RewriteRule ^404/?$ 404.php [NC,L]
+
+RewriteRule ^apanel/?$ apanel/index.php [NC,L]
+RewriteRule ^index/?$ index.php [NC,L]
+RewriteRule ^process-unsubscribe/([A-Za-z0-9-_]+)/?$ process_unsubscribe.php?id=$1 [NC,L]
+
+
+
+RewriteRule ^login/?$ login.php [NC,L]
+RewriteRule ^process-login/?$ process_login.php [NC,L]
+RewriteRule ^your-orders/?$ your_orders.php [NC,L]
+RewriteRule ^process-stay-connected/?$ process_stay_connected.php [NC,L]
+RewriteRule ^forgot-password/?$ forgot_password.php [NC,L]
+RewriteRule ^process-forgot-password/?$ process_forgot_password.php [NC,L]
+RewriteRule ^set-new-password/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ set_new_password.php?id=$1&slug=$2 [NC,L]
+RewriteRule ^process-set-new-password/?$ process_set_new_password.php [NC,L]
+RewriteRule ^process-change-password/?$ process-change-password.php [NC,L]
+RewriteRule ^logout/?$ logout.php [NC,L]
+RewriteRule ^sign-up/?$ sign_up.php [NC,L]
+RewriteRule ^activate-account/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ activate_account.php?uid=$1&activation_code=$2 [NC,L]
+
+
+
+RewriteRule ^about-us/?$ about_us.php [NC,L]
+RewriteRule ^courses/?$ courses.php [NC,L]
+RewriteRule ^courses/([A-Za-z0-9-_]+)/?$ courses.php?mode=$1 [NC,L]
+
+RewriteRule ^contact/?$ contact.php [NC,L]
+RewriteRule ^blog/?$ blog.php [NC,L]
+RewriteRule ^blog/([A-Za-z0-9-_]+)/?$ blog.php?category_id=$1 [NC,L]
+RewriteRule ^terms-and-conditions/?$ terms_and_conditions.php [NC,L]
+RewriteRule ^announcements/?$ announcements.php [NC,L]
+RewriteRule ^announcements/([A-Za-z0-9-_]+)/?$ announcements.php?id=$1 [NC,L]
+#RewriteRule ^blog-details/?$ blog_details.php [NC,L]
+RewriteRule ^blog-details/([A-Za-z0-9-_]+)/?$ blog_details.php?id=$1 [NC,L]
+RewriteRule ^courses-details/([A-Za-z0-9-_]+)/?$ courses_details.php?id=$1 [NC,L]
+
+RewriteRule ^lesson-details/?$ lesson_details.php [NC,L]
+RewriteRule ^lesson-details/([A-Za-z0-9-_]+)/?$ lesson_details.php?lesson_id=$1 [NC,L]
+
+RewriteRule ^library/?$ library.php [NC,L]
+RewriteRule ^members/?$ members.php [NC,L]
+RewriteRule ^members-details/([A-Za-z0-9-_]+)/?$ members_details.php?id=$1 [NC,L]
+
+RewriteRule ^online-module/?$ online_module.php [NC,L]
+RewriteRule ^online-module/([A-Za-z0-9-_]+)/?$ online_module.php?id=$1 [NC,L]
+
+RewriteRule ^payment/([A-Za-z0-9-_]+)/?$ payment.php?id=$1 [NC,L]
+RewriteRule ^pre-module-form/?$ pre_module_form.php [NC,L]
+RewriteRule ^pre-module-form/([A-Za-z0-9-_]+)/?$ pre_module_form.php?id=$1 [NC,L]
+
+RewriteRule ^pre-module-form/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ pre_module_form.php?module_id=$1&lesson_id=$2 [NC,L]
+
+RewriteRule ^post-module-form/?$ post_module_form.php [NC,L]
+RewriteRule ^post-module-form/([A-Za-z0-9-_]+)/?$ post_module_form.php?id=$1 [NC,L]
+
+RewriteRule ^post-module-form/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ post_module_form.php?module_id=$1&lesson_id=$2 [NC,L]
+
+RewriteRule ^report/?$ report.php [NC,L]
+RewriteRule ^report/([A-Za-z0-9-_]+)/?$ report.php?lesson_id=$1 [NC,L]
+RewriteRule ^testimonials/?$ testimonials.php [NC,L]
+RewriteRule ^profile/?$ profile.php [NC,L]
+RewriteRule ^change-password/?$ change_password.php [NC,L]
+RewriteRule ^history/?$ history.php [NC,L]
+
+RewriteRule ^prod/([A-Za-z0-9-_]+)/?$ product.php?slug=$1 [NC,L]
+RewriteRule ^prod/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ product.php?cat_slug=$1&slug=$2 [NC,L]
+RewriteRule ^address-information/?$ address-information.php [NC,L]
+RewriteRule ^track-order/([A-Za-z0-9-_]+)/?$ track-order.php?id=$1 [NC,L]
+
+
+
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 month"
+ExpiresByType image/jpeg "access 1 month"
+ExpiresByType image/gif "access 1 month"
+ExpiresByType image/png "access 1 month"
+ExpiresByType image/webp "access 1 month"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType text/javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##

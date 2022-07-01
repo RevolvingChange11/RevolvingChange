@@ -1,0 +1,104 @@
+RewriteOptions inherit
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+
+RewriteRule ^404/?$ 404.php [NC,L]
+
+RewriteRule ^apanel/?$ apanel/index.php [NC,L]
+RewriteRule ^index/?$ index.php [NC,L]
+
+RewriteRule ^process-login/?$ process_login.php [NC,L]
+RewriteRule ^logout/?$ logout.php [NC,L]
+
+RewriteRule ^forgot-password/?$ forgot_password.php [NC,L]
+RewriteRule ^process-forget-pass/?$ process_forget_password.php [NC,L]
+
+#RewriteRule ^set-new-password/([0-9]+)/([A-Za-z0-9-_]+)/?$ set_new_password.php?id=$1&slug=$2 [NC,L]
+RewriteRule ^set-new-password/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ set_new_password.php?id=$1&slug=$2 [NC,L]
+RewriteRule ^process-set-new-password/?$ process_set_new_password.php [NC,L]
+#RewriteRule ^activate-account/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ activate_account.php?lastid=$1&activation_code=$2 [NC,L]
+
+#RewriteRule ^register/?$ register.php [NC,L]
+
+RewriteRule ^dashboard/?$ dashboard.php [NC,L]
+RewriteRule ^my-account/?$ my_account.php [NC,L]
+
+## SubScriber ##
+RewriteRule ^manage-subscriber/?$ manage_subscriber.php [NC,L]
+
+## Contact ##
+RewriteRule ^manage-contact/?$ manage_contact.php [NC,L]
+
+## Purchase History ##
+#RewriteRule ^manage-orders//([A-Za-z0-9-_]+)/?$ manage_users_course.php?user_id=$1 [NC,L]
+RewriteRule ^manage-orders/?$ manage_orders.php [NC,L]
+
+## Course(user) ##
+RewriteRule ^Manage-User-Course/([A-Za-z0-9-_]+)/?$ manage_users_course.php?user_id=$1 [NC,L]
+
+## Module(user) ##
+RewriteRule ^manage-user-module/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ manage_user_module.php?module_id=$1&user_id=$2 [NC,L]
+
+## Lesson(user) ##
+RewriteRule ^Manage-User-Lesson/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ manage_user_lesson.php?lesson_id=$1&user_id=$2 [NC,L]
+
+## Question Form (user) ##
+#RewriteRule ^Manage-User-Form/?$ manage_user_question_form.php [NC,L]
+RewriteRule ^Manage-User-Form/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ manage_user_form.php?lesson_id=$1&user_id=$2 [NC,L]
+
+
+## Course ##
+RewriteRule ^manage-course/?$ manage_course.php [NC,L]
+RewriteRule ^add-course/([A-Za-z0-9-_]+)/?$ add_course.php?mode=$1 [NC,L]
+RewriteRule ^add-course/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_course.php?mode=$1&id=$2 [NC,L]
+
+## announcements ##
+RewriteRule ^manage-announcements/?$ manage_announcements.php [NC,L]
+RewriteRule ^manage-announcements/([A-Za-z0-9-_]+)/?$ manage_announcements.php?module_id=$1 [NC,L]
+RewriteRule ^add-announcements/([A-Za-z0-9-_]+)/?$ add_announcements.php?mode=$1 [NC,L]
+RewriteRule ^add-announcements/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_announcements.php?mode=$1&id=$2 [NC,L]
+
+
+## Module ##
+RewriteRule ^manage-module/?$ manage_module.php [NC,L]
+RewriteRule ^manage-module/([A-Za-z0-9-_]+)/?$ manage_module.php?module_id=$1 [NC,L]
+RewriteRule ^add-module/([A-Za-z0-9-_]+)/?$ add_module.php?mode=$1 [NC,L]
+RewriteRule ^add-module/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_module.php?mode=$1&id=$2 [NC,L]
+
+## Lesson ##
+RewriteRule ^manage-lesson/?$ manage_lesson.php [NC,L]
+RewriteRule ^manage-lesson/([A-Za-z0-9-_]+)/?$ manage_lesson.php?module_id=$1 [NC,L]
+RewriteRule ^add-lesson/([A-Za-z0-9-_]+)/?$ add_lesson.php?mode=$1 [NC,L]
+RewriteRule ^add-lesson/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_lesson.php?mode=$1&id=$2 [NC,L]
+
+## Blog - category  ##
+RewriteRule ^manage-blog-category/?$ manage_blog_category.php [NC,L]
+RewriteRule ^add-blog-category/([A-Za-z0-9-_]+)/?$ add_blog_category.php?mode=$1 [NC,L]
+RewriteRule ^add-blog-category/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_blog_category.php?mode=$1&id=$2 [NC,L]
+
+
+## Blog  ##
+RewriteRule ^manage-blog/?$ manage_blog.php [NC,L]
+RewriteRule ^add-blog/([A-Za-z0-9-_]+)/?$ add_blog.php?mode=$1 [NC,L]
+RewriteRule ^add-blog/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_blog.php?mode=$1&id=$2 [NC,L]
+
+
+## User ##
+RewriteRule ^manage-user/?$ manage_user.php [NC,L]
+RewriteRule ^add-user/([A-Za-z0-9-_]+)/?$ add_user.php?mode=$1 [NC,L]
+RewriteRule ^add-user/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_user.php?mode=$1&id=$2 [NC,L]
+
+## static page ##
+RewriteRule ^manage-static-page/?$ manage_static_page.php [NC,L]
+RewriteRule ^add-static-page/([A-Za-z0-9-_]+)/?$ add_static_page.php?mode=$1 [NC,L]
+RewriteRule ^add-static-page/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_static_page.php?mode=$1&id=$2 [NC,L]
+
+## Testimonial ##
+RewriteRule ^manage-testimonial/?$ manage_testimonial.php [NC,L]
+RewriteRule ^add-testimonial/([A-Za-z0-9-_]+)/?$ add_testimonial.php?mode=$1 [NC,L]
+RewriteRule ^add-testimonial/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?$ add_testimonial.php?mode=$1&id=$2 [NC,L]
+
+## Membership ##
+RewriteRule ^manage-membership/([A-Za-z0-9-_]+)/?$ manage_membership.php?id=$1 [NC,L]

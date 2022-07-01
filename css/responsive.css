@@ -1,0 +1,644 @@
+
+@media (max-width: 1500px) {
+
+    .blog-sidebar h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .recent-list li a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .blogs-info .date {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .blogs-info h4 {
+        padding-bottom: 5px;
+    }
+
+    .blogs-info h4 a {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .site-header .navbar {
+        padding: 15px 0;
+    }
+
+    .btn.Get-btn.mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    .resources-sec-content h3 {
+        font-size: 30px; 
+        line-height: 36px;
+        padding-bottom: 20px;
+    }
+
+    .Circumstances-sec-content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+   
+    .About_page-right-content h2 {
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 30px;
+    }
+    .About_page-right-content p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 10px;
+    }
+    .Hero_banner-section .banner-caption h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .section-header h1 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 42px;
+    }
+    .section-header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .feature-box .feature__text h4 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    .feature-box .feature__text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .feature-box {
+        padding: 20px 50px 0px;
+    }
+    .AboutUs-section {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .AboutUs-Heading.pb-80 {
+        padding-bottom: 60px;
+    }
+    .Course_Arc-left-sec p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    .Course_Arc-left-sec h3 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .btn.more-btn {
+        font-size: 14px;
+    }
+    .Client_say-text p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 1rem;
+    }
+    .Client_say-text h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .pt-100 {
+        padding-top: 80px;
+    }
+    
+    .pb-100 {
+        padding-bottom: 80px;
+    }
+    .client-box-sec {
+        padding: 20px 60px 0px;
+    }
+    .contact-form {
+        padding: 20px 50px;
+    }
+    .contact-form .form-group .form-control {
+        font-size: 16px;
+        height: 52px;
+    }
+    .Sign_Up-btn {
+        font-size: 16px;
+    }
+    .footer-link-menu .nav_link {
+        font-size: 16px;
+    }
+    .copyright p {
+        font-size: 16px;
+    }
+    .social-list li a {
+        font-size: 16px;
+    }
+    .site-footer {
+        padding: 30px 0px 25px;
+    }
+    .site-header .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    .client-box-sec {
+        padding: 10px 40px 0px;
+    }
+}
+
+@media (max-width: 1400px) { 
+    .blog-sidebar {
+        position: relative;
+        margin-left: 25px;
+    }
+    .blogs-info h4 a {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .page-heading-section h2 {
+        font-size: 42px;
+    }
+    .client-box-sec {
+        padding: 10px 30px 0px;
+    }
+    .Stay_Connected-section .section-header h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .Stay_Connected-section.pt-100.pb-100 {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .Course_Arc-left-sec h3 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .section-header h1 {
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    .feature-box {
+        padding: 10px 25px 0px;
+    }
+    .Hero_banner-section .banner-caption h2 {
+        font-size: 30px;
+        line-height: 36px;
+        padding-bottom: 50px;
+    }
+    .Hero_banner-section .banner-caption h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .AboutUs-Heading {
+        width: 100%;
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1300px) { 
+    .announcements-block h3 {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 34px;
+    }
+    .announcements-block p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    .section-header h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .link-list__links a {
+        font-size: 16px;
+    }
+    .Site-announcements.pt-120.pb-120 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .page-heading-section h2 {
+        font-size: 42px;
+    }
+    .resources-sec-content p {
+        font-size: 16px;
+    }
+    .btn.Get-btn {
+        font-size: 14px;
+    }
+    .section-header.text-center.mt-5 {
+        margin-top: 2rem !important;
+    }
+    .section-header.mb-5 {
+        margin-bottom: 2rem !important;
+    }
+    .Course_Arc-left-sec h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .section-header h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .AboutUs-Heading {
+        width: 100%;
+        max-width: 800px;
+    }
+    .feature-box .feature__image {
+        width: 50px;
+    }
+    .site-header .navbar {
+        padding: 14px 0;
+    }
+    .Hero_banner-section .banner-caption h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .Hero_banner-section .banner-caption h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .announcements__title h3 {
+        font-size: 26px;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 1200px) {  
+    .blogs-image img {
+        height: 450px;
+        width: 100%;
+    }
+    .blog-sidebar {
+        position: relative;
+        margin-left: 10px;
+    }
+    .Site-announcements.pt-120.pb-120 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .feature-box .feature__text h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .Course_Arc-left-sec p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .announcements__title {
+        position: relative;
+        padding-bottom: 20px;
+    } 
+    .page-heading-section.pt-120.pb-120 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .page-heading-section h2 {
+        font-size: 36px;
+    }
+    .About_page-right-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .About_page-left-image {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .btn.outline-btn.mt-5 {
+        margin-top: 1.4rem !important;
+    }
+    .copyright {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-link-menu {
+        position: relative;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    .Left_Images {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .Course_Arc-left-sec {
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .AboutUs-Heading.pb-80 {
+        padding-bottom: 40px;
+    }
+    .site-header .navbar-brand img {
+        display: block;
+        width: 150px;
+    }
+    .pt-100 {
+        padding-top: 60px;
+    }
+    .pb-80 {
+        padding-bottom: 60px;
+    }
+    .pb-100 {
+        padding-bottom: 60px;
+    }
+    .contact-form .form-group .form-control {
+        font-size: 16px;
+        height: 50px;
+    }
+    .Stay_Connected-section .section-header h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .site-header .navbar-collapse {
+        position: relative;
+        margin-top: 40px;
+    }
+    .site-header .navbar-toggler:hover,  .site-header .navbar-toggler:focus {
+        text-decoration: none;
+        box-shadow: none;
+        outline: none;
+    }
+    .btn.more-btn.mt-5 {
+        margin-top: 1rem !important;
+    }
+    .Course_Arc-left-sec {
+        position: relative;
+        padding-bottom: 0;
+    }
+    .Course_Arc-right-sec {
+        position: relative;
+        margin-top: 40px;
+    }
+}
+@media (max-width: 600px) { 
+    .announcements__title h3 {
+        font-size: 24px;
+    }
+    .announcements-block h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .section-header h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+   .Site-announcements.pt-120.pb-120 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .resources-sec-content p {
+        font-size: 14px;
+    }
+    .resources-sec-content h3 {
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+    .pt-80 {
+        padding-top: 40px;
+    }
+    .About_page-right-content p, .Circumstances-sec-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .footer-link-menu .nav_link {
+        margin: 0 0 10px;
+    }
+    .site-header .navbar {
+        padding: 10px 0;
+    }
+
+    .site-header .navbar-light .navbar-nav .nav-link {
+        margin: 0 10px;
+    }
+
+    .site-header .navbar-collapse {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .Hero_banner-section .banner-caption h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .Hero_banner-section .banner-caption h2 {
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 20px;
+    }
+ 
+    .Course_Arc-left-sec {
+        position: relative;
+        padding-bottom: 0;
+    }
+    .Course_Arc-left-sec h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .Hero_banner-section .banner-caption h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .section-header h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .section-header p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .page-heading-section h2 {
+        font-size: 28px;
+    }
+    .blogs-info h4 a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .blogs-info h4 {
+        padding-bottom: 10px;
+        line-height: 24px;
+    }
+    .blogs-info p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 15px;
+    }
+    .wp-block-quote p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .blogs-info li {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 5px;
+    }
+    .blogs-info ul {
+        padding-left: 1rem;
+    }
+    blockquote.wp-block-quote {
+        margin: 20px 0px 0px;
+    }
+}
+@media (max-width: 450px) { 
+   
+    .blogs-info h4 a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .blogs-info {
+        padding: 20px;
+        position: relative;
+    }
+    .blogs-image img {
+        height: 340px;
+        width: 100%;
+    }
+    .btn.view-btn {
+        padding: 10px 36px;
+        font-size: 14px;
+    }
+    .blogs-info .date {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .site-header .navbar {
+        padding: 5px 0;
+    }
+   
+    .filter__field, .Member-search .form-control {
+        font-size: 14px;
+    }
+    .announcements-block p {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+    .announcements-block h3 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+    .section-header h2 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    .Site-announcements.pt-120.pb-120 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .announcements__header .Member-search .form-control {
+        margin-left: 0;
+    }
+    .announcements__header .Member-search {
+        flex: initial;
+        width: 100%;
+    }
+    .announcements__header .user-filter {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .announcements__header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .announcements__title h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .top_link-bar {
+        padding: 10px 0px 10px;
+    }
+    .page-header-section {
+        position: relative;
+        border-bottom: solid 0px #1000c6;
+    }
+    .link-list__links a {
+        font-size: 14px;
+    }
+    .About_page-right-content p {
+        padding-bottom: 5px;
+    }
+    .About_page-right-content h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .page-heading-section.pt-120.pb-120 {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    .page-heading-section h2 {
+        font-size: 24px;
+    }
+    .contact-form .form-group .form-control {
+        font-size: 14px;
+        height: 45px;
+    }
+    .Course_Arc-left-sec p {
+        padding-bottom: 5px;
+    }
+    .section-header h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .AboutUs-Heading.pb-80 {
+        padding-bottom: 20px;
+    }
+    .Course_Arc-left-sec h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .Sign_Up-btn {
+        font-size: 14px;
+    }
+    .section-header.text-center.mt-5 {
+        margin-top: 1rem !important;
+    }
+    .site-footer {
+        padding: 20px 0px 20px;
+    }
+    .footer-link-menu {
+        padding-bottom: 5px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+    .footer-link-menu .nav_link {
+        font-size: 14px;
+    }
+    .btn.outline-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .Stay_Connected-section .section-header h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .section-header.mb-5 {
+        margin-bottom: 0rem !important;
+    }
+    .pt-100 {
+        padding-top: 40px;
+    }
+    .pb-100 {
+        padding-bottom: 40px;
+    }
+    .Stay_Connected-section.pt-100.pb-100 {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .contact-form {
+        padding: 0px 0;
+    }
+    .form-check-label {
+        font-size: 14px;
+    }
+}
